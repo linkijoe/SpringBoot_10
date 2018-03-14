@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<a href="/">Show all Courses</a>a><br />
+Title :<span th:test="${course.title}" ></span><br />
+Instructor :<span th:test="${course.instructor}" ></span><br />
+Description :<p th:test="${course.description}"></p><br />
+Credits :<span th:test="${course.credit}"></span><br />
+<a th:href="@{/delete/{id}(id=${course.id})}">Delete this course</a>
+</body>
+</html>
